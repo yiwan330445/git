@@ -144,8 +144,7 @@ char *reftable_strdup(const char *str);
 #endif
 
 /* Find the longest shared prefix size of `a` and `b` */
-struct strbuf;
-int common_prefix_size(struct strbuf *a, struct strbuf *b);
+int common_prefix_size(struct reftable_buf *a, struct reftable_buf *b);
 
 int hash_size(uint32_t id);
 
